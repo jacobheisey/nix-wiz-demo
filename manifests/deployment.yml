@@ -16,5 +16,6 @@ spec:
       containers:
       - image: alannix/nix-foundation:latest
         name: nix-foundation-www
+        runAsNonRoot: true
         ports:
         - containerPort: 8080
